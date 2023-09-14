@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Jane Doe - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Rocko Rhyser
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          jdoe@jeemail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +13456764598
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">skills</a>
+          <a class="topmenu" href="#projects">projects</a>
+          <a class="topmenu" href="#recommendations">recommendations</a>
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://miro.medium.com/max/1400/1*qdAW1TjCN57h1lbuuzvchg.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Rocko Rhyser! <img src="https://media.giphy.com/media/WRdRtrUDLcUBzTJtHx/giphy.gif?cid=ecf05e47jzcic9pv29oimt9ytrf8tq931esbnzcgojm9gkws&ep=v1_stickers_search&rid=giphy.gif&ct=s" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with experience in technologies such as Cloud foundations, GitHub, Node.js, React, CI/CD, Containers, Docker, Kubernetes, OpenShift, Istio, Databases, NoSQL, Django ORM, Bootstrap, Application Security, Microservices and Serverless computing.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>2 years experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>3 years experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"/>
+            <h6>GitHub</h6>
+            <p>2 years experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"/>
+            <h6>Node.js</h6>
+            <p>2 years experience</p>
+          </div> 
+
+          <div class="skill">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"/>
+            <h6>React</h6>
+            <p>3 years experience</p>
+          </div> 
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>AI WebGen</h3>
+            <ul>
+              <li>Developing websites using AI</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Character Checker</h3>
+            <ul>
+              <li>Analyzing characteristics to build character profiles using AI</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Expression Modifier</h3>
+            <ul>
+              <li>Changing human expression on images using AI</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Rocko is a confident individual with drive and determination.
+          He will not stop until the job is done to the best of standards.
+          A true team player!
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working alongside Rocko is not only a pleasure, it is also exciting!
+          Everyday is full of fun and he keeps everyone on their feet and drives the team to do their best at all times.
+          It is an honour to work with Rocko.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Rocko has definately been an asset to our company as a whole.
+          Not only does he work on and fulfil what is required, he always goes over and beyond by helping whoever is in need.
+          He is incredibly knowledgable and always wants to learn more. 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thank you for posting your recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
